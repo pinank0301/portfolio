@@ -22,7 +22,7 @@ export function Hero() {
                                 <EncryptedText text="20 ★ Engineer ★ FullStack Developer" />
                             </p>
                             <p className="max-w-xl text-lg leading-relaxed text-neutral-600 dark:text-neutral-300">
-                                <EncryptedText text="Hi there, I'm Pinank, a final year undergrad pursuing Engineering. I love to build cool products that make people's lives easier. I play, read books, and create content for fun." />
+                                <EncryptedText text="Hi there, I'm Pinank, a final year undergrad pursuing Engineering. I love to build cool products that make people's lives easier. I play, read books, and participate in hackathons for fun." />
                             </p>
                         </div>
 
