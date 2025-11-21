@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
+import { features } from "process";
 
 const projects = [
     {
@@ -17,8 +18,8 @@ const projects = [
             "Billing integration",
             "Modular UI",
         ],
-        github: "#",
-        live: "#",
+        github: "https://github.com/pinank0301/QuickAI",
+        live: "https://quickai-pin.vercel.app/",
         color: "#2664f5",
     },
     {
@@ -30,18 +31,30 @@ const projects = [
             "Volunteer registration",
             "Digital certificates",
         ],
-        github: "#",
-        live: "#",
+        github: "https://github.com/pinank0301/The-Brute-Force",
+        live: "https://the-brute-force.vercel.app/",
         color: "#f56426",
     },
     {
         title: "Gender & Age Recognition System",
         description: "Real-time live camera model",
-        tech: "Python, OpenCV, Caffe",
+        tech: "Python + OpenCV + Caffe",
         features: ["Tkinter GUI desktop app"],
-        github: "#",
-        live: "#",
+        github: "https://github.com/pinank0301/Gender-and-Age-Detection",
+        live: "https://github.com/pinank0301/Gender-and-Age-Detection",
         color: "#a826f5",
+    },
+    {
+        title: "Estate Agent Website (Frontend UI Hackathon)",
+        description: "Estate Agent Website made in 12 hours with no use of AI",
+        tech: "React + Tailwind CSS + ShadCn + Zennit UI components",
+        features: [
+            "Framer Motion",
+            "Chatbot Support for customers"
+        ],
+        github: "https://github.com/pinank0301/Zennit-Hackathon",
+        live: "https://estate-agent-pro.vercel.app/",
+        color: "#008000",
     },
 ];
 

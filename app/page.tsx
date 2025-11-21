@@ -1,7 +1,6 @@
 import { GridBackground } from "@/components/ui/grid-background";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
@@ -17,9 +16,6 @@ export default function Home() {
           <div id="hero">
             <Hero />
           </div>
-          <div id="about">
-            <About />
-          </div>
           <Skills />
           <Projects />
           <div id="experience">
@@ -30,7 +26,7 @@ export default function Home() {
           </div>
 
           <footer id="contact" className="text-center text-sm text-neutral-500 dark:text-neutral-400">
-            <p>© {new Date().getFullYear()} Pinank Trivedi. All rights reserved.</p>
+            <p>❤️ {new Date().getFullYear()} Pinank Trivedi. All rights reserved.</p>
           </footer>
         </div>
       </GridBackground>

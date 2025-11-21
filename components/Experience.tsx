@@ -67,19 +67,16 @@ export function Experience() {
                             {/* Content */}
                             <div className={cn(
                                 "ml-12 md:w-1/2 md:ml-0",
-                                index % 2 === 0 ? "md:pl-12" : "md:pr-12 md:text-right"
+                                index % 2 === 0 ? "md:pl-12" : "md:pr-12"
                             )}>
-                                <div className="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
+                                <div className="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 text-left">
                                     <h3 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
                                         {exp.role}
                                     </h3>
                                     <p className="mb-4 text-sm font-medium text-emerald-500">
                                         {exp.company}
                                     </p>
-                                    <ul className={cn(
-                                        "list-disc space-y-2 text-sm text-neutral-600 dark:text-neutral-400",
-                                        index % 2 === 0 ? "pl-5" : "pl-5 md:pl-0 md:pr-5 md:list-none" // Adjust list style for right alignment
-                                    )}>
+                                    <ul className="list-disc space-y-2 text-sm text-neutral-600 dark:text-neutral-400 pl-5">
                                         {exp.description.map((item, i) => (
                                             <li key={i}>{item}</li>
                                         ))}

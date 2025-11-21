@@ -9,7 +9,6 @@ import {
     MobileNavHeader,
     MobileNavMenu,
     MobileNavToggle,
-    NavbarLogo,
 } from "@/components/ui/resizable-navbar";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -17,7 +16,6 @@ export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
-        { name: "About", link: "#about" },
         { name: "Skills", link: "#skills" },
         { name: "Projects", link: "#projects" },
         { name: "Experience", link: "#experience" },
@@ -28,25 +26,17 @@ export function Navbar() {
         <NavbarPrimitive className="top-4">
             <NavBody>
                 <div className="flex w-full items-center justify-between">
-                    <NavbarLogo />
                     <NavItems
                         items={navItems}
                         className="relative flex-1"
                     />
                     <div className="flex items-center gap-4">
                         <ThemeToggle />
-                        <a
-                            href="#contact"
-                            className="rounded-full bg-black px-4 py-2 text-sm font-bold text-white transition duration-200 hover:bg-neutral-800 dark:bg-white dark:text-black dark:hover:bg-neutral-200"
-                        >
-                            Contact
-                        </a>
                     </div>
                 </div>
             </NavBody>
             <MobileNav visible={true} className="md:hidden">
                 <MobileNavHeader>
-                    <NavbarLogo />
                     <MobileNavToggle
                         isOpen={isMobileMenuOpen}
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
