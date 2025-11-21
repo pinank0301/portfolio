@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconFileText, IconMail } from "@tabler/icons-react";
 import { EncryptedText } from "@/components/ui/encrypted-text";

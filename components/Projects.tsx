@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { color, motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { CardSpotlight } from "@/components/ui/card-spotlight";

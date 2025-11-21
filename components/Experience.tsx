@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -46,7 +45,7 @@ export function Experience() {
                     Experience
                 </h2>
                 <div className="relative mx-auto max-w-4xl">
-                    {/* Central Line */}
+                   
                     <div className="absolute left-4 top-0 h-full w-0.5 bg-neutral-200 dark:bg-neutral-800 md:left-1/2 md:-translate-x-1/2" />
 
                     {experiences.map((exp, index) => (
@@ -61,10 +60,10 @@ export function Experience() {
                                 index % 2 === 0 ? "md:flex-row-reverse" : ""
                             )}
                         >
-                            {/* Timeline Dot */}
+                            
                             <div className="absolute left-4 top-0 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-2 border-white bg-neutral-800 dark:border-neutral-900 dark:bg-neutral-200 md:left-1/2" />
 
-                            {/* Content */}
+                           
                             <div className={cn(
                                 "ml-12 md:w-1/2 md:ml-0",
                                 index % 2 === 0 ? "md:pl-12" : "md:pr-12"
@@ -84,7 +83,7 @@ export function Experience() {
                                 </div>
                             </div>
 
-                            {/* Empty Space for the other side */}
+                            
                             <div className="hidden md:block md:w-1/2" />
                         </motion.div>
                     ))}
