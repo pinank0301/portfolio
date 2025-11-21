@@ -5,6 +5,7 @@ import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
 import { Education } from "@/components/Education";
+import { Footer } from "@/components/Footer";
 
 
 export default function Home() {
@@ -25,11 +26,9 @@ export default function Home() {
             <Education />
           </div>
 
-          <footer id="contact" className="text-center text-sm text-neutral-500 dark:text-neutral-400">
-            <p>❤️ {new Date().getFullYear()} Pinank Trivedi. All rights reserved.</p>
-          </footer>
         </div>
       </GridBackground>
+      <Footer />
     </main>
   );
 }
