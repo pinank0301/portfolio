@@ -6,6 +6,7 @@ const skills = [
     "HTML",
     "CSS",
     "Tailwind CSS",
+    "Java",
     "JavaScript",
     "TypeScript",
     "Python",
@@ -15,10 +16,13 @@ const skills = [
     "Express.js",
     "Node.js",
     "MongoDB",
-    "SQL",
+    "MySQL",
     "PostgreSQL",
-    "Langchain",
     "AWS",
+    "Git",
+    "Github",
+    "Generative AI",
+    "Database Management",
 ];
 
 export function Skills() {
