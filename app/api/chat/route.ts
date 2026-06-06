@@ -25,10 +25,12 @@ export async function POST(req: Request) {
         const text = response.text();
 
         return NextResponse.json({ response: text });
-    } catch (error) {
+    } catch (error: any) {
         console.error("Error in chat API:", error);
+        const errorMessage =
+            error?.message || "Failed to generate response";
         return NextResponse.json(
-            { error: "Failed to generate response" },
+            { error: errorMessage },
             { status: 500 }
         );
     }
